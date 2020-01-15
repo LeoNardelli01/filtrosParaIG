@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+h1{
+  font-family: 'Pacifico', cursive;
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px 1px rgb(115, 0, 0);
+}
+p{
+  color: rgb(203, 203, 203);
+  font-family: 'Baloo Bhai', cursive;
+}
+
+.fondo-transparente{
+  background-image: url("../img-videos/background.png");
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  position: absolute;
+  z-index: -1;
+  background-size: auto;
+  opacity: 0.2;
+  background-position: center;
+}
+
+
+.categorias{
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cat-producto{
+  width: 28vw;
+  margin-bottom: 25px;
+}
+.cat-producto img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.grande{
+  height: 300px;
+  margin-bottom: 20px;
+}
+.mediano {
+  height: 200px;
+}
+.chico{
+  height: 150px;
+}
+
+@media (min-width: 300px) and (max-width: 480px){
+  .cat-producto{
+    width: 40vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+  .cat-producto {
+    width: 35vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024) and (orientation: horizontal){
+  .cat-producto {
+    width: 25px;
+  }
+}
