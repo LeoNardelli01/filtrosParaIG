@@ -11,15 +11,16 @@ $(function(){
   var vMascaraFlotante = $("video")[1];
   var vFondo = $("video")[2];
   var vLogo = $("video")[3];
-
-
+  var height = $(document).height();
+  console.log(height);
+  
   $(document).on('scroll',function(){
 
     var scrollTop = $(document).scrollTop();
-    console.log("Scroll:" + scrollTop);
+    console.log("Scroll: " + scrollTop);
 
 
-    if (scrollTop < 2) {
+    if (scrollTop < 10) {
       vMascara.pause();
       vMascaraFlotante.pause();
       vFondo.pause();
